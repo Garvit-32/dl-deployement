@@ -1,5 +1,6 @@
+-f https://download.pytorch.org/whl/torch_stable.html
 Django 
-torch
-torchvision
+torch+cpu
+torchvision+cpu
 Pillow
 opencv-python-headless
