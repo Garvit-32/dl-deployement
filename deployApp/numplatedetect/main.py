@@ -20,7 +20,7 @@ def process(img="download.jpg"):
         im = Image.open(
             img
         )
-        frame = np.array(im)
+        frame = np.array(im)[:, :, :3]
         array_image, data_dictionary = runner(
             frame, model, 'deployApp/numplatedetect/weights/iter2.pth')
         final_image = Image.fromarray(array_image, "RGB")
